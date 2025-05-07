@@ -911,6 +911,7 @@ public class EmbeddedPostgres implements Closeable
 
             builder.command(command);
             
+            builder.environment().clear();
             builder.environment().putAll(environmentVariables);
         }
     }
